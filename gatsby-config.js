@@ -10,12 +10,12 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Muli`,
-            variants: [`300`]
+            family: 'Muli',
+            variants: ['200', '300']
           },
           {
-            family: `Bebas`,
-            variants: [`400`]
+            family: 'Oswald',
+            variants: ['500']
           }
         ]
       }
