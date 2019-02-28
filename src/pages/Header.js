@@ -67,9 +67,9 @@ const Header = ({ title }) => (
     <Content>
       <Head>
         <Date>
-          <h4>22</h4>
+          <h4>14</h4>
           <hr />
-          <h4>07</h4>
+          <h4>09</h4>
         </Date>
         <Name>
           <h1>Front In</h1>
