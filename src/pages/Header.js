@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import Countdown from 'react-countdown-now'
+import { prop } from 'styled-tools'
 
 import background from '../images/background.svg'
+import Count from '../components/Count'
 
 const Container = styled.header`
   width: 100%;
@@ -17,7 +19,7 @@ const Container = styled.header`
 
 const Content = styled.div`
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 60%;
 `
 
@@ -28,7 +30,7 @@ const Head = styled.div`
 
 const Name = styled.div`
   h1 {
-    font-family: Muli, sans-serif;
+    font-family: ${prop('theme.typographies.muli')};
     font-weight: 200;
     font-size: 39px;
     text-transform: uppercase;
@@ -44,41 +46,46 @@ const Name = styled.div`
   }
 `
 
-const Date = styled.div`
+const Day = styled.div`
   margin-right: 40px;
 
   h4 {
-    font-family: Oswald, sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 53px;
   }
 
   hr {
-    background: #000;
+    background-color: ${prop('theme.palette.black')};
     width: 40px;
     border: none;
     height: 4px;
   }
 `
 
-const Header = ({ title }) => (
-  <Container>
-    <Content>
-      <Head>
-        <Date>
-          <h4>14</h4>
-          <hr />
-          <h4>09</h4>
-        </Date>
-        <Name>
-          <h1>Front In</h1>
-          <h2>Maringá</h2>
-        </Name>
-      </Head>
-    </Content>
-  </Container>
-)
+const Header = ({ title }) => {
+  const date = new Date('2019-09-14T09:00:00').valueOf()
+
+  return (
+    <Container>
+      <Content>
+        <Head>
+          <Day>
+            <h4>14</h4>
+            <hr />
+            <h4>09</h4>
+          </Day>
+          <Name>
+            <h1>Front In</h1>
+            <h2>Maringá</h2>
+          </Name>
+        </Head>
+
+        <Countdown renderer={Count} date={date} />
+      </Content>
+    </Container>
+  )
+}
 
 Header.propTypes = {
   title: PropTypes.string.isRequired
