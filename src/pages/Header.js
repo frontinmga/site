@@ -3,10 +3,16 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Countdown from 'react-countdown-now'
 import { prop } from 'styled-tools'
+import {
+  faTwitter,
+  faFacebookF,
+  faGithubAlt
+} from '@fortawesome/free-brands-svg-icons'
 
 import background from '../images/background.svg'
 import Count from '../components/Count'
 import Button from '../components/Button'
+import Icon from '../components/Icon'
 
 const Container = styled.header`
   width: 100%;
@@ -22,6 +28,19 @@ const Content = styled.div`
   position: absolute;
   top: 25%;
   left: 60%;
+`
+
+const Footer = styled.div`
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 `
 
 const Head = styled.div`
@@ -90,6 +109,12 @@ const Header = ({ title }) => {
 
         <Countdown renderer={Count} date={date} />
       </Content>
+
+      <Footer>
+        <Icon icon={faTwitter} url="https://twitter.com/frontinmga" />
+        <Icon icon={faFacebookF} url="https://facebook.com/frontinmga" />
+        <Icon icon={faGithubAlt} url="https://github.com/frontinmga" />
+      </Footer>
     </Container>
   )
 }

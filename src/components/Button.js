@@ -1,4 +1,3 @@
-import React from 'react'
 import styled, { css } from 'styled-components'
 import { prop, switchProp } from 'styled-tools'
 
