@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+
 import { theme } from '../components/Theme'
 
 const IndexPage = () => (

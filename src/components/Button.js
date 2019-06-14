@@ -1,11 +1,9 @@
 import styled, { css } from 'styled-components'
-import { prop, switchProp } from 'styled-tools'
+import { switchProp, theme } from 'styled-tools'
 
 const Button = styled.a`
   cursor: pointer;
-  background-color: ${prop('theme.palette.black')};
-  font-family: ${prop('theme.typographies.muli')};
-  color: ${prop('theme.palette.white')};
+  font-family: ${theme('typographies.muli')};
   border-radius: 25px;
   text-transform: uppercase;
   text-align: center;
@@ -17,8 +15,24 @@ const Button = styled.a`
   text-decoration: none;
 
   ${switchProp('size', {
+    default: css`
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto;
+    `,
     large: css`
       width: 100%;
+    `
+  })}
+
+  ${switchProp('variant', {
+    primary: css`
+      background-color: ${theme('colors.black')};
+      color: ${theme('colors.white')};
+    `,
+    secondary: css`
+      background-color: ${theme('colors.white')};
+      color: ${theme('colors.black')};
     `
   })}
 
@@ -26,5 +40,10 @@ const Button = styled.a`
     animation: bounce 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 `
+
+Button.defaultProps = {
+  variant: 'primary',
+  size: 'default'
+}
 
 export default Button

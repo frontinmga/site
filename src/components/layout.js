@@ -2,7 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from '../pages/Header'
+import Header from '../sections/Header'
+import Sponsors from '../sections/Sponsors'
+import Ticket from '../sections/Ticket'
+
 import { Reset } from './Reset'
 
 const Layout = ({ children }) => (
@@ -20,6 +23,8 @@ const Layout = ({ children }) => (
       <>
         <Reset />
         <Header title={data.site.siteMetadata.title} />
+        <Ticket />
+        <Sponsors />
       </>
     )}
   />

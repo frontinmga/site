@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import PropTypes from 'prop-types'
 
 const Container = styled.a`
-  background-color: ${prop('theme.palette.black')};
+  background-color: ${prop('theme.colors.black')};
   border-radius: 50%;
   text-transform: uppercase;
   text-align: center;
@@ -20,7 +20,7 @@ const Container = styled.a`
   }
 
   .icon {
-    color: ${prop('theme.palette.white')};
+    color: ${prop('theme.colors.white')};
     font-size: 18px;
     position: absolute;
     top: 50%;

@@ -6,7 +6,7 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${prop('theme.palette.white')};
+  color: ${prop('theme.colors.white')};
   padding: 0 10px;
 
   span:first-of-type {
@@ -40,7 +40,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: ${prop('theme.palette.black')};
+  background-color: ${prop('theme.colors.black')};
 `
 
 const Count = ({ days, hours, minutes, seconds }) => {

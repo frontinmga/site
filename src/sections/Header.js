@@ -78,14 +78,14 @@ const Day = styled.div`
   }
 
   hr {
-    background-color: ${prop('theme.palette.black')};
+    background-color: ${prop('theme.colors.black')};
     width: 55px;
     border: none;
     height: 4px;
   }
 `
 
-const Header = ({ title }) => {
+export default function Header({ title }) {
   const date = new Date('2019-09-14T09:00:00').valueOf()
 
   return (
@@ -103,7 +103,11 @@ const Header = ({ title }) => {
           </Name>
         </Head>
 
-        <Button href="https://forms.gle/ERrq8RKcDJGGSmS2A" target="_blank">
+        <Button
+          href="https://forms.gle/ERrq8RKcDJGGSmS2A"
+          variant="primary"
+          target="_blank"
+        >
           Inscrição Call4papers
         </Button>
 
@@ -122,5 +126,3 @@ const Header = ({ title }) => {
 Header.propTypes = {
   title: PropTypes.string.isRequired
 }
-
-export default Header
