@@ -47,7 +47,12 @@ export default function Ticket() {
         maior evento frontend do Paraná!
       </p>
 
-      <Button variant="secondary" size="default" target="_blank">
+      <Button
+        variant="secondary"
+        size="default"
+        target="_blank"
+        href="https://www.sympla.com.br/front-in-maringa-2019__554907"
+      >
         Garantir ingresso
       </Button>
     </Container>

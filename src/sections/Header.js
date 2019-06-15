@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Countdown from 'react-countdown-now'
+import media from 'styled-media-query'
+
 import { prop } from 'styled-tools'
 import {
   faTwitter,
