@@ -106,11 +106,12 @@ export default function Header({ title }) {
         </Head>
 
         <Button
-          href="https://forms.gle/ERrq8RKcDJGGSmS2A"
           variant="primary"
+          size="default"
           target="_blank"
+          href="https://www.sympla.com.br/front-in-maringa-2019__554907"
         >
-          Inscrição Call4papers
+          Garantir ingresso
         </Button>
 
         <Countdown renderer={Count} date={date} />

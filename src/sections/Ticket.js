@@ -15,11 +15,11 @@ const Container = styled.div`
   h2 {
     font-family: ${theme('typographies.oswald')};
     font-size: 30px;
+    line-height: 40px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     color: ${theme('colors.white')};
     text-align: center;
-    max-width: 250px;
+    max-width: 290px;
     margin: 0 auto;
   }
 
@@ -48,12 +48,11 @@ export default function Ticket() {
       </p>
 
       <Button
+        href="https://forms.gle/ERrq8RKcDJGGSmS2A"
         variant="secondary"
-        size="default"
         target="_blank"
-        href="https://www.sympla.com.br/front-in-maringa-2019__554907"
       >
-        Garantir ingresso
+        Inscrição Call4papers
       </Button>
     </Container>
   )
