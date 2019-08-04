@@ -13,7 +13,7 @@ const Container = styled.div`
   flex-direction: column;
 
   h2 {
-    font-family: ${theme('typographies.oswald')};
+    font-family: ${theme('font.family.oswald')};
     font-size: 30px;
     line-height: 40px;
     text-transform: uppercase;
@@ -34,7 +34,7 @@ const Container = styled.div`
   }
 `
 
-export default function Ticket() {
+export default function C4P() {
   return (
     <Container>
       <h2>Eai, vamos falar mais sobre frontend?</h2>

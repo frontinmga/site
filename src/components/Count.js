@@ -11,7 +11,7 @@ const Box = styled.div`
 
   span:first-of-type {
     font-size: 40px;
-    font-family: ${prop('theme.typographies.oswald')};
+    font-family: ${prop('theme.font.family.oswald')};
   }
 
   span {

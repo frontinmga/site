@@ -16,18 +16,18 @@ const Container = styled.div`
   text-align: center;
 
   h2 {
-    font-family: ${theme('typographies.oswald')};
+    font-family: ${theme('font.family.oswald')};
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: ${theme('colors.black')};
     text-align: center;
-    max-width: 290px;
+    max-width: 330px;
     margin: 0 auto;
   }
 
   h3 {
-    font-family: ${theme('typographies.oswald')};
+    font-family: ${theme('font.family.oswald')};
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 2px;

@@ -4,7 +4,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from '../sections/Header'
 import Sponsors from '../sections/Sponsors'
-import Ticket from '../sections/Ticket'
+import Schedule from '../sections/Schedule'
+import C4P from '../sections/C4P'
 
 import { Reset } from './Reset'
 
@@ -23,8 +24,9 @@ const Layout = ({ children }) => (
       <>
         <Reset />
         <Header title={data.site.siteMetadata.title} />
-        <Ticket />
+        <Schedule />
         <Sponsors />
+        <C4P />
       </>
     )}
   />

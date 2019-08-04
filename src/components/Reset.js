@@ -17,6 +17,6 @@ export const Reset = createGlobalStyle`
   p,
   a,
   span {
-    font-family: ${prop('theme.typographies.oswald')};
+    font-family: ${prop('theme.font.family.oswald')};
   }
 `

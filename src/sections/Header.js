@@ -62,7 +62,7 @@ const Name = styled.div`
   }
 
   h2 {
-    font-family: ${prop('theme.typographies.oswald')};
+    font-family: ${prop('theme.font.family.oswald')};
     font-weight: 500;
     font-size: 50px;
     text-transform: uppercase;

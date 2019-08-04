@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Front In Maringá`,
-    description: `O maior evento de frontend de Maringá`,
+    description: `O maior evento de frontend do Paraná.`,
     author: `@frontinmga`
   },
   plugins: [
@@ -15,7 +15,7 @@ module.exports = {
           },
           {
             family: 'Oswald',
-            variants: ['500']
+            variants: ['300', '400', '500']
           }
         ]
       }
@@ -40,14 +40,14 @@ module.exports = {
         theme_color: `#fff`,
         display: `minimal-ui`
       }
-    }
-    ,{
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: "GTM-ND3MP3G",
-        includeInDevelopment: false,
-      },
-    },
+        id: 'GTM-ND3MP3G',
+        includeInDevelopment: false
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
