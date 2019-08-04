@@ -6,18 +6,9 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: 'Muli',
-            variants: ['200', '300']
-          },
-          {
-            family: 'Oswald',
-            variants: ['300', '400', '500']
-          }
-        ]
+        fonts: [`Muli\:100,200, 300`, `Oswald\:300,400,500`]
       }
     },
     `gatsby-plugin-react-helmet`,

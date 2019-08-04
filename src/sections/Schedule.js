@@ -17,6 +17,7 @@ const Container = styled.div`
   text-align: center;
 
   h2 {
+    letter-spacing: 2px;
     font-family: ${theme('font.family.oswald')};
     font-size: 30px;
     line-height: 40px;
@@ -94,7 +95,13 @@ const Description = styled.div`
   text-align: left;
   color: ${theme('colors.white')};
 
+  p {
+    font-family: ${theme('font.family.muli')};
+  }
+
   h3 {
+    text-transform: uppercase;
+    font-weight: ${theme('font.weight.light')};
     margin-bottom: 5px;
   }
 `
