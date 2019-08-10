@@ -125,7 +125,7 @@ const Slot = ({
     <Hour>{hour}</Hour>
     <Circle line={line} />
     <Speaker>
-      {image && <img className="photo" src={image} />}
+      {image && <img className="photo" src={image} alt={name} />}
       <Description>
         <h3>{name}</h3>
         <p>{description}</p>
