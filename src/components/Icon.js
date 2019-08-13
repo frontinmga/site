@@ -29,8 +29,8 @@ const Container = styled.a`
   }
 `
 
-const Icon = ({ icon, url }) => (
-  <Container href={url} target="_blank">
+const Icon = ({ icon, url, title }) => (
+  <Container href={url} target="_blank" title={title}>
     <FontAwesomeIcon className="icon" icon={icon} />
   </Container>
 )

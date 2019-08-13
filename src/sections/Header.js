@@ -118,9 +118,9 @@ export default function Header({ title }) {
       </Content>
 
       <Footer>
-        <Icon icon={faTwitter} url="https://twitter.com/frontinmga" />
-        <Icon icon={faFacebookF} url="https://facebook.com/frontinmga" />
-        <Icon icon={faGithubAlt} url="https://github.com/frontinmga" />
+        <Icon icon={faTwitter} url="https://twitter.com/frontinmga" title="Siga-nos no twitter" />
+        <Icon icon={faFacebookF} url="https://facebook.com/frontinmga" title="Nos acompanhe no facebook" />
+        <Icon icon={faGithubAlt} url="https://github.com/frontinmga" title="Confira nosso github" />
       </Footer>
     </Container>
   )
