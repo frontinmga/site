@@ -4,6 +4,7 @@ import { theme, ifProp } from 'styled-tools'
 
 import sibelius from '../images/sibelius.png'
 import junior from '../images/junior.png'
+import fernanda from '../images/fernanda.png'
 
 import { Box } from '../components'
 
@@ -73,6 +74,7 @@ const Circle = styled.div`
 `
 
 const Hour = styled.span`
+  width: 20px;
   color: ${theme('colors.white')};
   font-family: ${theme('font.family.oswald')};
   font-weight: ${theme('font.weight.light')};
@@ -148,19 +150,23 @@ export default function Schedule() {
           image={junior}
         />
         <Slot hour="10:30" name="Apresentação a definir" />
+        <Slot hour="11:00" name="Apresentação a definir" />
+        <Slot hour="12:00" name="Almoço" />
         <Slot
-          hour="11:00"
+          hour="13:30"
           name="Sibelius"
           description="Practical AST, compilers to tooling"
           image={sibelius}
         />
-        <Slot hour="12:00" name="Almoço" />
-        <Slot hour="13:30" name="Apresentação a definir" />
         <Slot hour="14:30" name="Apresentação a definir" />
-
         <Slot hour="15:00" name="Apresentação a definir" />
         <Slot hour="15:30" name="Coffee Break" />
-        <Slot hour="16:00" name="Apresentação a definir" />
+        <Slot
+          hour="16:00"
+          name="Fernanda Bernardo"
+          description="O mágico mundo de Houdini"
+          image={fernanda}
+        />
         <Slot hour="17:00" name="Encerramento" top={50} line={false} />
       </Timeline>
     </Container>
