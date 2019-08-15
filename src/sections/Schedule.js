@@ -5,6 +5,7 @@ import { theme, ifProp } from 'styled-tools'
 import sibelius from '../images/sibelius.png'
 import junior from '../images/junior.png'
 import fernanda from '../images/fernanda.png'
+import vinicius from '../images/vinicius.png'
 
 import { Box } from '../components'
 
@@ -149,7 +150,12 @@ export default function Schedule() {
           description="50 tons de frontend"
           image={junior}
         />
-        <Slot hour="10:30" name="Apresentação a definir" />
+        <Slot
+          hour="10:30"
+          name="Vinícius Felix"
+          description="Gráficos, o limiar entre uma mensagem e uma mentira"
+          image={vinicius}
+        />
         <Slot hour="11:00" name="Apresentação a definir" />
         <Slot hour="12:00" name="Almoço" />
         <Slot
