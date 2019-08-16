@@ -6,6 +6,7 @@ import sibelius from '../images/sibelius.png'
 import junior from '../images/junior.png'
 import fernanda from '../images/fernanda.png'
 import vinicius from '../images/vinicius.png'
+import jose from '../images/jose.png'
 
 import { Box } from '../components'
 
@@ -164,7 +165,12 @@ export default function Schedule() {
           description="Practical AST, compilers to tooling"
           image={sibelius}
         />
-        <Slot hour="14:30" name="Apresentação a definir" />
+        <Slot
+          hour="14:30"
+          name="José Fernando Tavares"
+          description="Acessibilidade: desafio e oportunidades"
+          image={jose}
+        />
         <Slot hour="15:00" name="Apresentação a definir" />
         <Slot hour="15:30" name="Coffee Break" />
         <Slot
