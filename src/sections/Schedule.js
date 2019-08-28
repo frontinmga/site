@@ -153,7 +153,7 @@ export default function Schedule() {
         />
         <Slot
           hour="10:30"
-          name="Vinícius Felix"
+          name="Vinícius Félix"
           description="Gráficos, o limiar entre uma mensagem e uma mentira"
           image={vinicius}
         />
@@ -161,7 +161,7 @@ export default function Schedule() {
         <Slot hour="12:00" name="Almoço" />
         <Slot
           hour="13:30"
-          name="Sibelius"
+          name="Sibelius Seraphini"
           description="Practical AST, compilers to tooling"
           image={sibelius}
         />

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { switchProp, theme } from 'styled-tools'
+import { switchProp, theme, ifProp } from 'styled-tools'
 
 const Button = styled.a`
   cursor: pointer;
@@ -13,17 +13,23 @@ const Button = styled.a`
   letter-spacing: 2px;
   display: block;
   text-decoration: none;
+  margin: 0 auto;
 
   ${switchProp('size', {
     default: css`
-      width: 100%;
-      max-width: 250px;
-      margin: 0 auto;
+      padding: 0 20px;
     `,
     large: css`
-      width: 100%;
+      padding: 0 35px;
     `
   })}
+
+  ${ifProp(
+    { full: true },
+    css`
+      width: 100%;
+    `
+  )}
 
   ${switchProp('variant', {
     primary: css`

@@ -27,7 +27,8 @@ const Container = styled.div`
     margin: 40px auto 90px auto;
     max-width: 700px;
     text-align: center;
-    font-family: ${theme('typographies.muli')};
+    font-family: ${theme('font.family.muli')};
+    font-weight: ${theme('font.weight.light')};
     color: ${theme('colors.white')};
     line-height: 20px;
     letter-spacing: 2px;
@@ -52,7 +53,7 @@ export default function C4P() {
         variant="secondary"
         target="_blank"
       >
-        Inscrição Call4papers
+        Inscrições call4papers já encerradas
       </Button>
     </Container>
   )
