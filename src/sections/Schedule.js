@@ -4,9 +4,12 @@ import { theme, ifProp } from 'styled-tools'
 
 import sibelius from '../images/sibelius.png'
 import junior from '../images/junior.png'
-import fernanda from '../images/fernanda.png'
+import fernando from '../images/fernando.png'
 import vinicius from '../images/vinicius.png'
 import jose from '../images/jose.png'
+import larissa from '../images/larissa.png'
+import andre from '../images/andre.png'
+import mayza from '../images/mayza.png'
 
 import { Box } from '../components'
 
@@ -120,7 +123,7 @@ const Slot = ({
   hour,
   name,
   description,
-  image,
+  images,
   line = true,
   top = 30,
   ...props
@@ -129,7 +132,8 @@ const Slot = ({
     <Hour>{hour}</Hour>
     <Circle line={line} />
     <Speaker>
-      {image && <img className="photo" src={image} alt={name} />}
+      {images &&
+        images.map(image => <img className="photo" key={name} src={image} alt={name} />)}
       <Description>
         <h3>{name}</h3>
         <p>{description}</p>
@@ -147,37 +151,48 @@ export default function Schedule() {
         <Slot hour="09:00" name="Checkin e Coffee Break" />
         <Slot
           hour="10:00"
-          name="Junior Conte"
-          description="50 tons de frontend"
-          image={junior}
+          name="Vinícius Félix"
+          description="Gráficos, o limiar entre uma mensagem e uma mentira"
+          images={[vinicius]}
         />
         <Slot
           hour="10:30"
-          name="Vinícius Félix"
-          description="Gráficos, o limiar entre uma mensagem e uma mentira"
-          image={vinicius}
+          name="Larrisa Roder e Mayza Hirose"
+          description="Entrando no desconhecido"
+          images={[larissa, mayza]}
         />
-        <Slot hour="11:00" name="Apresentação a definir" />
+
+        <Slot
+          hour="11:00"
+          name="Junior Conte"
+          description="50 tons de frontend"
+          images={[junior]}
+        />
         <Slot hour="12:00" name="Almoço" />
         <Slot
           hour="13:30"
           name="Sibelius Seraphini"
           description="Practical AST, compilers to tooling"
-          image={sibelius}
+          images={[sibelius]}
         />
         <Slot
           hour="14:30"
           name="José Fernando Tavares"
           description="Acessibilidade: desafio e oportunidades"
-          image={jose}
+          images={[jose]}
         />
-        <Slot hour="15:00" name="Apresentação a definir" />
+        <Slot
+          hour="15:00"
+          name="André Van Dal"
+          description="JAMStack: O minimalismo chegou ao frontend"
+          images={[andre]}
+        />
         <Slot hour="15:30" name="Coffee Break" />
         <Slot
           hour="16:00"
-          name="Fernanda Bernardo"
-          description="O mágico mundo de Houdini"
-          image={fernanda}
+          name="Fernando Tenório"
+          description="Qual será o futuro do CSS?"
+          images={[fernando]}
         />
         <Slot hour="17:00" name="Encerramento" top={50} line={false} />
       </Timeline>
