@@ -9,7 +9,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.8.2",
     "@fortawesome/free-solid-svg-icons": "^5.8.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "gatsby": "^2.1.11",
+    "gatsby": "^2.32.13",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-google-tagmanager": "^2.0.15",
     "gatsby-plugin-manifest": "^2.0.18",
